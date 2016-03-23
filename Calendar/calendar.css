@@ -1,0 +1,47 @@
+/**********
+PAGE STYLE
+**********/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: -webkit-linear-gradient(top, #fad961, #f76d1d);
+  background: linear-gradient(to bottom, #fad961, #f76d1d);
+  background-attachment: fixed;
+  padding: 1px 0;
+  font-family: sans-serif;
+}
+
+.month {
+  max-width: 560px;
+  margin: 20px auto;
+}
+
+.week {
+  height: 80px;
+  display: flex;
+}
+
+.day{
+  color: #f98909;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: -1px -1px #F9a440, inset -1px -1px 0 0 #f9a440;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.week:first-of-type .day:first-of-type {
+  margin-left: 42.857%;
+}
+
+.week:last-of-type .day:last-of-type {
+  margin-right: 14.285%;
+}

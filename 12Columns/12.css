@@ -1,0 +1,59 @@
+/**********
+PAGE STYLE
+**********/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 10px;
+    background: #ED4264; /* fallback for old browsers */
+    background: -webkit-linear-gradient(left top, #FFEDBC , #ED4264); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right,  #FFEDBC, #ED4264); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.column {
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  color: rgba(255, 255, 255, 0.9);
+  box-sizing: content-box;
+}
+
+
+
+
+/***********
+LAYOUT
+***********/
+
+section {
+  max-width: 740px;
+  margin: 0 auto;
+  display: flex;
+}
+
+
+.column {
+  margin: 10px;
+  flex: 1 1 0px;
+}
+
+
+section:nth-of-type(5) .column:first-of-type {
+  flex: 2 2 22px;
+}
+
+section:nth-of-type(6) .column:nth-of-type(2){
+  flex: 4 4 22px;
+}
